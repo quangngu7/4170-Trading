@@ -6,6 +6,7 @@ PD1 = numpy.ones((10,))/10
 PD2 = numpy.ones((5,))/5
 
 # O = D1 + D1 + D1 + D1
+# Adding random variables is equal to convolving its pdf
 PO = numpy.convolve(PD1,PD1)
 PO = numpy.convolve(PO,PD1)
 PO = numpy.convolve(PO,PD1)
